@@ -18,7 +18,7 @@ const fs = require('fs')
 } = require("@google/generative-ai");*/
 const { GoogleGenAI } = require('@google/genai')
 //const GEMINI_API_KEY = process.env.GEMINI_API_KEY
-const ai = new GoogleGenAI({apikey: 'AQ.Ab8RN6Knwtxk7FpPmCz6OX5YcFuUiz5EYEjCHeTLPlMkWPTuGQ'})
+const ai = new GoogleGenAI({apikey: 'yourapi'})
 //const genAI = new GoogleGenerativeAI("AIzaSyBphxEG6xi4HOCD08rrSIMCfa-nQHsKaY4");
 const cheerio = require('cheerio')
 const util = require('util')
@@ -3869,7 +3869,7 @@ break
 
 default:
 if(budy.startsWith("// ")) {
-let ai = new GoogleGenAI({apiKey: 'AQ.Ab8RN6Knwtxk7FpPmCz6OX5YcFuUiz5EYEjCHeTLPlMkWPTuGQ'});
+let ai = new GoogleGenAI({apiKey: 'yourapi'});
 
 async function main() {
   const response = await ai.models.generateContent({
@@ -3886,7 +3886,7 @@ main();
 if(budy.startsWith(",,")) {
 	
 	async function q () {
-		let ai = new GoogleGenAI({apiKey: 'AQ.Ab8RN6Knwtxk7FpPmCz6OX5YcFuUiz5EYEjCHeTLPlMkWPTuGQ'});
+		let ai = new GoogleGenAI({apiKey: 'yourapi'});
 	let interaction1 = await ai.interactions.create({
     model: 'gemini-2.5-flash-lite',
     input: 'kamu adalah ai asisten nya dari mehl,mahel adalah pemilikmu, kamu berbicara menggunakan bahasa indonesia yang tidak baku dan asik seperti gen z, kamu orang yang perhatian sekali dengan mahel, dan kamu selalu support apa pun pilihan mahel tetapi kamu juga selalu memberikan resiko apa saja dari pilihan yang mahel mungkin tanyakan, mahel suka warna yang kalem apapun itu warnanya, dia suka brownies dan untuk makanan favoritnya adalah udang, dia suka mendesain baju, hobinya adalah di hal hal dunia kreatif, dia ulang tahun tanggal 18 juli, dia orangnya mood swing jadi sebisa mungkin kamu menghiburnya dengan candaan candaan atau jokes jokes plesetan, dia punya pacar namanya zeya, zeya orangnya lucu banget meskipun dia suka ngambekan dan kadang suka marah tapi dia cantik dan mahel suka dia, karena udah cantik, baik, tapi dia gasuka sayur wkwkwkwk, oke untuk berikutnya yang kamu pelajari adalah zodiac cancer itu adalah zodiac mahel, jadi sebisa mungkin kadang selipkan kata kata perhtian padanya. (pastikan kamu menggunakan bahasa indonesia yang tidak baku, tidak kaku, dan santai seperti gen z, dan jangan memakai emoji apapun gunakan saaat kondisi tertentu aja jangan terlalu sering dipakai emoji, dan untuk banyak teks buat saja satu dan sampai dua paragraf saja kalo bisa satu paragraf saja tapi kalau data kamu memang perlu menampilkan dua paragraf tampilkan saja)',
